@@ -1,0 +1,5 @@
+class Solution:
+    def firstPalindrome(self, wrd: List[str]) -> str:
+        return next((w for w in wrd if w == w[::-1]), "")
+        
+        
