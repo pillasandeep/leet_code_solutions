@@ -1,0 +1,8 @@
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        x=0
+        for index, sublist in enumerate(accounts):
+            s=sum(sublist)
+            if s>x:
+                x=s
+        return x
